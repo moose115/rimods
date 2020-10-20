@@ -8,8 +8,28 @@
     "start": "next start"
   },
   "dependencies": {
+    "byte-size": "^7.0.0",
+    "mongoose": "^5.10.9",
     "next": "9.5.5",
     "react": "16.14.0",
-    "react-dom": "16.14.0"
+    "react-dom": "16.14.0",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.7.36",
+    "@types/node": "^14.11.10",
+    "@types/react": "^16.9.53",
+    "@types/styled-components": "^5.1.4",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.4.1",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-typescript": "^11.0.0",
+    "eslint-config-typescript-airbnb": "^1.0.0-rc4",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "typescript": "^4.0.3",
+    "typescript-eslint": "0.0.1-alpha.0"
   }
 }
