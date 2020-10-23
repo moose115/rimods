@@ -1,3 +1,7 @@
+:root {
+  --background: #15191d;
+}
+
 html,
 body {
   padding: 0;

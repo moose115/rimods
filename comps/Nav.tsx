@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Menu as MenuIcon } from '@styled-icons/material-outlined/Menu';
 import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
 import { useState } from 'react';
@@ -18,13 +18,20 @@ background: transparent;
 border: none;
 color: inherit;
 cursor: pointer;
+position: absolute;
+top: 1rem;
+right: 1rem;
 `;
 
 const MenuList = styled.ul<MenuProps>`
 margin: 0;
+padding: 4rem 1rem;
 min-height: 100vh;
 width: 100vw;
 display: flex;
+flex-flow: column;
+align-items: center;
+background: var(--background);
 ${({ isOpen }) => (!isOpen && 'visibility: hidden;')}
 list-style: none;
 position: fixed;
@@ -34,7 +41,9 @@ ${({ isOpen }) => (!isOpen && 'transform: translateX(100vw);')}
 transition: .2s;
 `;
 
-const MenuLink = styled.a``;
+const MenuLink = styled.a`
+font-size: 1.5rem
+`;
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);

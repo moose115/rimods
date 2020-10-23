@@ -8,7 +8,7 @@ padding: 0 .5rem;
 display: flex;
 flex-direction: column;
 align-items: center;
-background: #15191d;
+background: var(--background);
 `;
 
 const defaultDescription = 'Rimods is an enhanced mod catalogue for Rimworld. List your mods, create modpacks and share with others!';
