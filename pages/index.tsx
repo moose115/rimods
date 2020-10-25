@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from '../comps/Layout';
 import styles from '../styles/Home.module.css';
 import Menu from '../comps/Nav';
+import ModResults from '../comps/ModResults';
 
 export default function Home() {
   return (
@@ -18,11 +19,7 @@ export default function Home() {
           Welcome to Rimods!
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing
-          {' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <ModResults />
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
