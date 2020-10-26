@@ -12,7 +12,7 @@ const mockupMod = {
   images: ['https://picsum.photos/1920/1080', 'https://picsum.photos/1920/1080'],
   ludeonLink: '#',
   workshopLink: '#',
-  tags: ['gameplay', 'overhaul'],
+  tags: [{ name: 'gameplay', type: 'category' }, { name: 'creatures', type: 'category' }, { name: '1.2', type: 'version' }],
 } as ModType;
 
 const ModResults = (

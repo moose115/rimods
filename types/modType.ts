@@ -1,8 +1,13 @@
+type Tag = {
+  name: string;
+  type: string;
+};
+
 type ModType = {
   name: string;
   images: string[];
   description: string;
-  tags: string[];
+  tags: Tag[];
   workshopLink: string;
   ludeonLink: string;
   timestampAdd: string | number;
