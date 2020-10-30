@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import ModType from '../types/modType';
+import ModCard from './ModCard';
 
 const StyledDiv = styled.div`
 display: flex;
@@ -20,12 +21,8 @@ const ModResults = (
 ) => (
   <StyledDiv>
     {
-      mods.map((el) => (
-        <article>
-          <h3>{el.name}</h3>
-          <img src={el.images[0]} alt="mod" width="200" />
-          <p>{el.description}</p>
-        </article>
+      mods.map((mod, i) => (
+        <ModCard mod={mod} key={`mod-${i}`} />
       ))
     }
   </StyledDiv>
