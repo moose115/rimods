@@ -1,9 +1,19 @@
 import styled from 'styled-components';
 import ModType from '../types/modType';
+import Box from './Box';
+import Button from './Button';
 
-const StyledDiv = styled.div`
-display: flex;
-flex-flow: column;
+const Card = styled.article`
+width: 300px;
+padding: 5px;
+`;
+
+const ModTitle = styled.h3`
+margin: 0 0 10px;
+`;
+
+const Thumbnail = styled.img`
+width: 100%;
 `;
 
 const ModCard = (
@@ -20,13 +30,16 @@ const ModCard = (
     },
   }: {mod: ModType},
 ) => (
-  <StyledDiv>
-    <article>
-      <h3>{name}</h3>
-      <img src={images[0]} alt="mod" width="200" />
+  <Box>
+    <Card>
+      <ModTitle title={name}>{name}</ModTitle>
+      <Thumbnail src={images[0]} alt={name} />
       <p>{description}</p>
-    </article>
-  </StyledDiv>
+      <Button>
+        Hey
+      </Button>
+    </Card>
+  </Box>
 );
 
 export default ModCard;

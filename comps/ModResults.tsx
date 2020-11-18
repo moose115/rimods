@@ -3,8 +3,10 @@ import ModType from '../types/modType';
 import ModCard from './ModCard';
 
 const StyledDiv = styled.div`
-display: flex;
-flex-flow: column;
+display: grid;
+grid-template-columns: auto auto auto;
+grid-column-gap: 10px;
+grid-row-gap: 10px;
 `;
 
 const mockupMod = {
@@ -29,7 +31,7 @@ const ModResults = (
 );
 
 ModResults.defaultProps = {
-  mods: [mockupMod],
+  mods: [...new Array(10)].map(() => mockupMod),
 };
 
 export default ModResults;

@@ -5,10 +5,10 @@ import styled from 'styled-components';
 const StyledDiv = styled.div`
 min-height: 100vh;
 padding: 0 .5rem;
-display: flex;
-flex-direction: column;
-align-items: center;
-background: var(--background);
+background-image: url('/thumbnail.jpg');
+background-attachment: fixed;
+background-position: center center;
+background-size: cover;
 `;
 
 const defaultDescription = 'Rimods is an enhanced mod catalogue for Rimworld. List your mods, create modpacks and share with others!';
