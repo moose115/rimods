@@ -1,17 +1,18 @@
-type Tag = {
+type Author = {
   name: string;
-  type: string;
+  url: string;
 };
 
 type ModType = {
-  name: string;
-  images: string[];
-  description: string;
-  tags: Tag[];
-  workshopLink: string;
-  ludeonLink: string;
-  timestampAdd: string | number;
-  timestampUpdate?: string | number;
+  id: string;
+  title: string;
+  authors: Author[];
+  tags: string[];
+  rating: number;
+  steamSubscribersCount: number;
+  steamRatingsCount: number;
+  thumbnailUrl: string;
+  workshopUrl: string;
 };
 
 export default ModType;

@@ -1,7 +1,11 @@
 :root {
   --primary: #eee;
   --background: #15191d;
+  --background-input: #141515;
+  --background-inner: #2A2B2C;
   --border: #666;
+  --border-input: #7e7e7e;
+  --border-input-bright: #9e9e9e;
 }
 
 html,
@@ -9,6 +13,10 @@ body {
   padding: 0;
   margin: 0;
   color: #eee;
+}
+
+body {
+  overflow-y: scroll;
 }
 
 html,

@@ -1,43 +1,68 @@
 import styled from 'styled-components';
+import {
+  LogoSteam,
+  LogoSteamDimensions,
+} from '@styled-icons/ionicons-solid/LogoSteam';
 import ModType from '../types/modType';
 import Box from './Box';
-import Button from './Button';
+import _Button from './Button';
+
+const Button = styled(_Button)`
+  height: 1rem;
+`;
 
 const Card = styled.article`
-width: 300px;
-padding: 5px;
+  width: 100%;
+  padding: 5px;
 `;
 
 const ModTitle = styled.h3`
-margin: 0 0 10px;
+  margin: 0 0 10px;
+  overflow: hidden;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 `;
 
 const Thumbnail = styled.img`
-width: 100%;
+  width: 100%;
 `;
 
-const ModCard = (
-  {
-    mod: {
-      name,
-      description,
-      images,
-      tags,
-      ludeonLink,
-      workshopLink,
-      timestampAdd,
-      timestampUpdate,
-    },
-  }: {mod: ModType},
-) => (
+const ButtonsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+`;
+
+const Steam = styled.img`
+  max-height: 0.9em;
+  display: inline-block;
+`;
+
+const ModCard = ({
+  mod: {
+    id, title, thumbnailUrl, workshopUrl,
+  },
+}: {
+  mod: ModType;
+}) => (
   <Box>
     <Card>
-      <ModTitle title={name}>{name}</ModTitle>
-      <Thumbnail src={images[0]} alt={name} />
-      <p>{description}</p>
-      <Button>
-        Hey
-      </Button>
+      <ModTitle title={title}>{title}</ModTitle>
+      <Thumbnail src={thumbnailUrl || '/assets/noimage.png'} alt={title} />
+      <ButtonsContainer>
+        <Button
+          link
+          href={workshopUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Workshop
+        </Button>
+        <Button link href={`steam://url/CommunityFilePage/${id}`}>
+          <Steam src="/assets/steam.png" alt="Steam logo" />
+        </Button>
+      </ButtonsContainer>
     </Card>
   </Box>
 );

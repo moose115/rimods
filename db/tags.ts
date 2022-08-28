@@ -1,0 +1,85 @@
+export default [
+  { name: '1.1', description: 'Mods for rimworld version 1.1' },
+  { name: '1.2', description: 'Mods for rimworld version 1.2' },
+  { name: '1.3', description: 'Mods for rimworld version 1.3' },
+  { name: 'Add-on', description: 'Mods add-ons, i.e. new weapons for CE' },
+  { name: 'Animals', description: 'New animals and creatures' },
+  { name: 'Apparel', description: 'New apparel, clothing' },
+  { name: 'Armor', description: 'New armors' },
+  { name: 'Backstories', description: 'Custom backstories' },
+  { name: 'CE', description: 'Combat Extended and mods made for it' },
+  { name: 'DLC required', description: 'Mod depends on a DLC' },
+  { name: 'Utility', description: 'Tools for debugging, editing values etc.' },
+  { name: 'Equipment ', description: 'Wearable accesories' },
+  { name: 'Event/quest', description: 'Additional events' },
+  { name: 'Faction', description: 'New factions' },
+  { name: 'Food', description: 'New foods' },
+  {
+    name: 'Framework',
+    description:
+      'Mod frameworks that may not add anything new by themselves, but other mods may rely on them.',
+  },
+  { name: 'Furniture', description: 'New furniture' },
+  { name: 'UI', description: 'New tabs, UI elements, enhanced displays' },
+  { name: 'Hairstyle/tattoo', description: 'New hairstyles, tatoos' },
+  { name: 'Implants', description: 'New implants to augment your colonists' },
+  { name: 'Material', description: 'More materials' },
+  { name: 'Mechanoids', description: 'Mods related to mechanoids' },
+  { name: 'Medical', description: 'Medicine related mods' },
+  {
+    name: 'Mod tweaks',
+    description:
+      'Small patches to other mods like a different way of balancing',
+  },
+  { name: 'New mechanics', description: 'Self explanatory' },
+  {
+    name: 'Overhaul',
+    description:
+      'Major change of vanilla mechanisms, for example Combat Extended',
+  },
+  {
+    name: 'Performance',
+    description: 'Mods that improve the performence of the game',
+  },
+  { name: 'Plants ', description: 'New plants' },
+  { name: 'Power', description: 'Mods related to power' },
+  { name: 'Production', description: 'Mods related to production' },
+  { name: 'Psycasts ', description: 'Mods related to Psycasts' },
+  {
+    name: 'QoL',
+    description:
+      'Quality of Life mods - small mods that improve how enjoyable certain tasks in the game are',
+  },
+  { name: 'Races', description: 'New races' },
+  { name: 'Retexture', description: 'New textures' },
+  { name: 'Sounds', description: 'New sounds' },
+  { name: 'Storage', description: 'Storage mechanisms' },
+  { name: 'Storytellers', description: 'New storytellers' },
+  { name: 'Styles', description: 'New Ideology styles' },
+  { name: 'Traits', description: 'New traits for pawns' },
+  {
+    name: 'Translation',
+    description:
+      'Translation mods, because they clutter the workshop and made me make this site',
+  },
+  {
+    name: 'Transport',
+    description:
+      'Transportation related mods - GiddyUp, drop pods, SRTS, caravans',
+  },
+  {
+    name: 'Tweaks ',
+    description: 'Small changes to vanilla mechanisms, not necessarily QoL',
+  },
+  { name: 'Visual', description: 'Visual improvements' },
+  { name: 'Weapon: melee', description: 'New melee weapns' },
+  { name: 'Weapon: other', description: 'New weapons' },
+  { name: 'Weapon: ranged', description: 'New ranged weapons' },
+  { name: 'World', description: 'Mods related to world generation and biomes' },
+  { name: 'Tribal', description: 'Tribal technology related mods' },
+  { name: 'Neolitihc', description: 'Neolithic technology related mods' },
+  { name: 'Medieval', description: 'Medieval technology related mods' },
+  { name: 'Industrial', description: 'Industrial technology related mods' },
+  { name: 'Ultra', description: 'Ultra technology related mods' },
+  { name: 'Archotech', description: 'Archotech technology related mods' },
+];
